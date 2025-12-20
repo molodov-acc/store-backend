@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "T-Shirt",
+    "categoryId": 1,
+    "brandId": 3,
+    "gender": "male",
+    "sizes": ["M", "L"],
+    "colors": ["red", "blue"],
+    "price": 20,
+    "image": "/images/products/tshirt.png"
+  },
+  {
+    "id": "2",
+    "title": "Dress",
+    "categoryId": 1,
+    "brandId": 3,
+    "gender": "female",
+    "sizes": ["S", "M"],
+    "colors": ["black", "red"],
+    "price": 50,
+    "image": "/images/products/dress.png"
+  },
+  {
+    "id": "3",
+    "title": "Snowboard Model X",
+    "categoryId": 2,
+    "brandId": 1,
+    "gender": "male",
+    "sizes": ["150", "155", "160"],
+    "colors": ["black", "red", "blue"],
+    "price": 350,
+    "image": "/images/products/snowboard-x.png"
+  },
+  {
+    "id": "4",
+    "title": "Ski Model Y",
+    "categoryId": 3,
+    "brandId": 2,
+    "gender": "female",
+    "sizes": ["160", "165", "170"],
+    "colors": ["white", "pink"],
+    "price": 400,
+    "image": "/images/products/ski-y.png"
+  },
+  {
+    "id": "5",
+    "title": "Snowboard Model Z",
+    "categoryId": 2,
+    "brandId": 1,
+    "sizes": ["155", "160", "165"],
+    "colors": ["green", "blue"],
+    "price": 380,
+    "image": "/images/products/snowboard-z.png"
+  }
+]
