@@ -34,3 +34,10 @@ exports.getById = (id) => {
   if (!product) throw new AppError("Product not found", 404);
   return product;
 };
+
+exports.updateImage = (id, imagePath) => {
+  const product = storage.getById(id);
+  if (!product) throw new AppError("Product not found", 404);
+  
+  return storage.updateById(id, { image: imagePath });
+};

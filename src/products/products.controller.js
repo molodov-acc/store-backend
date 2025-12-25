@@ -1,4 +1,5 @@
 const service = require("./products.service");
+const AppError = require("../errors/AppError");
 
 exports.getAll = (req, res) => {
   const products = service.getAll(req.query);
@@ -13,4 +14,25 @@ exports.getById = (req, res) => {
   }
 
   res.json(product);
+};
+
+exports.uploadImage = (req, res, next) => {
+  try {
+    if (!req.file) {
+      throw new AppError(
+        "No file uploaded. Please make sure to send the file with the field name 'image'",
+        400
+      );
+    }
+
+    const imagePath = `/images/products/${req.file.filename}`;
+    const product = service.updateImage(req.params.id, imagePath);
+
+    res.json({
+      message: "Image uploaded successfully",
+      product,
+    });
+  } catch (error) {
+    next(error);
+  }
 };
