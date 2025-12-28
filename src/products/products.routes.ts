@@ -6,4 +6,3 @@ export const router = Router();
 
 router.get("/", validateQuery, controller.getAll);
 router.get("/:id", controller.getById);
-router.post("/", controller.createProduct);

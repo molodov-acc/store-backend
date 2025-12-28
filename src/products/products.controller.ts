@@ -29,5 +29,4 @@ const getById = (req: Request, res: Response) => {
 export const controller = {
   getAll,
   getById,
-  createProduct,
 };
