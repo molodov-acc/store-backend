@@ -1,20 +1,23 @@
-import { fileDb } from "../utils/fileDb";
+import { fileDb } from "../shared/utils/fileDb";
 import { User } from "./types";
 
 const FILE = "users.json";
 
-const getAll = () => {
-  return fileDb.read(FILE) || [];
+const getAll = async (): Promise<User[]> => {
+  const data = (await fileDb.read(FILE)) ?? [];
+  return data;
 };
 
-const findByEmail = (email: string) => {
-  return getAll().find((user: User) => user.email === email);
+const findByEmail = async (email: string): Promise<User | undefined> => {
+  const users = await getAll();
+  return users.find((user: User) => user.email === email);
 };
 
-const create = (user: User) => {
-  const users = getAll();
+const create = async (user: User): Promise<User> => {
+  const users = await getAll();
   users.push(user);
-  fileDb.write(FILE, users);
+
+  await fileDb.write(FILE, users);
 
   return user;
 };

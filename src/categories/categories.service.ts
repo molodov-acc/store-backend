@@ -1,8 +1,9 @@
+import { randomUUID } from "crypto";
 import { storage } from "./categories.storage";
 
-const getAll = () => storage.getAll();
-const create = (name: string) =>
-  storage.create({ id: Date.now().toString(), name });
+const getAll = async () => await storage.getAll();
+const create = async (name: string) =>
+  await storage.create({ id: randomUUID(), name });
 
 export const service = {
   getAll,

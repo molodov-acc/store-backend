@@ -1,9 +1,11 @@
-export interface Product {
-  id: string;
-  name: string;
-  price: number;
-  quantity?: number;
-  [key: string]: any;
+import { Product } from "../shared/types/types";
+
+export interface Cart {
+  userId: string;
+  items: CartItem[];
+}
+export interface CartItem extends Product {
+  quantity: number;
 }
 
 export interface AddToCartParams {

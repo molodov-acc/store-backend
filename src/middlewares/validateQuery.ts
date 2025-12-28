@@ -4,9 +4,6 @@ import { AppError } from "../errors/AppError";
 const validGenders = ["male", "female"];
 const validCategories = ["snowboard", "ski", "boots", "clothes"];
 
-type Gender = "male" | "female";
-type Category = "snowboard" | "ski" | "boots" | "clothes";
-
 interface QueryParams {
   gender?: string;
   size?: string;

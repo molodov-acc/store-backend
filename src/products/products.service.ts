@@ -1,8 +1,16 @@
 import { storage } from "./products.storage";
 import { AppError } from "../errors/AppError";
+import { ProductQuery } from "./types";
+import { Product } from "../shared/types/types";
 
-const getAll = ({ gender, size, category, brandId, color }) => {
-  let products = storage.getAll();
+const getAll = async ({
+  gender,
+  size,
+  categoryId,
+  brandId,
+  color,
+}: ProductQuery) => {
+  let products = (await storage.getAll()) as Product[];
 
   if (gender) {
     products = products.filter((p) => p.gender === gender);
@@ -12,8 +20,8 @@ const getAll = ({ gender, size, category, brandId, color }) => {
     products = products.filter((p) => p.sizes.includes(size));
   }
 
-  if (category) {
-    const catId = +category;
+  if (categoryId) {
+    const catId = +categoryId;
     products = products.filter((p) => p.categoryId === catId);
   }
 
@@ -29,8 +37,9 @@ const getAll = ({ gender, size, category, brandId, color }) => {
   return products;
 };
 
-const getById = (id) => {
-  const product = storage.getById(id);
+const getById = async (id: string) => {
+  const product = await storage.getById(id);
+
   if (!product) throw new AppError("Product not found", 404);
   return product;
 };

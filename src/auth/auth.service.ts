@@ -6,11 +6,11 @@ import { storage } from "./auth.storage";
 import { AuthCredentials, User } from "./types";
 
 const register = async ({ email, password }: AuthCredentials) => {
-  if (!email || !password) {
+  if (!email?.trim() || !password?.trim()) {
     throw new AppError("Email and password required", 400);
   }
 
-  const existingUser = storage.findByEmail(email);
+  const existingUser = await storage.findByEmail(email);
   if (existingUser) {
     throw new AppError("User already exists", 400);
   }
@@ -23,17 +23,17 @@ const register = async ({ email, password }: AuthCredentials) => {
     password: hashedPassword,
   };
 
-  storage.create(user);
+  await storage.create(user);
 
   return generateToken(user);
 };
 
 const login = async ({ email, password }: AuthCredentials) => {
-  if (!email || !password) {
+  if (!email?.trim() || !password?.trim()) {
     throw new AppError("Email and password required", 400);
   }
 
-  const user = storage.findByEmail(email);
+  const user = await storage.findByEmail(email);
   if (!user) {
     throw new AppError("Invalid credentials", 401);
   }

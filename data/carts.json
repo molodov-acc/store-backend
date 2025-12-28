@@ -3,10 +3,18 @@
     "userId": "1766233036609",
     "items": [
       {
-        "id": "1",
-        "title": "Snowboard Model X",
-        "price": 350,
-        "quantity": 2
+        "product": {
+          "id": "3",
+          "title": "Snowboard Model X",
+          "categoryId": 2,
+          "brandId": 1,
+          "gender": "male",
+          "sizes": ["150", "155", "160"],
+          "colors": ["black", "red", "blue"],
+          "price": 350,
+          "image": "/images/products/snowboard-x.png",
+          "quantity": 1
+        }
       }
     ]
   }

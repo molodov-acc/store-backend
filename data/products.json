@@ -48,6 +48,7 @@
     "title": "Snowboard Model Z",
     "categoryId": 2,
     "brandId": 1,
+    "gender": "female",
     "sizes": ["155", "160", "165"],
     "colors": ["green", "blue"],
     "price": 380,

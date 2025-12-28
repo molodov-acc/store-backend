@@ -1,15 +1,18 @@
-import { fileDb } from "../utils/fileDb";
+import { fileDb } from "../shared/utils/fileDb";
+import { Cart } from "./types";
 const FILE = "carts.json";
 
-const getAll = () => fileDb.read(FILE) || [];
+const getAll = async () => (await fileDb.read(FILE)) || [];
 
-const getByUserId = (userId: string) => {
-  const carts = getAll();
+const getByUserId = async (userId: string) => {
+  const carts = (await getAll()) as Cart[];
+
   return carts.find((c) => c.userId === userId) || { userId, items: [] };
 };
 
-const save = (cart) => {
-  const carts = getAll();
+const save = async (cart: Cart) => {
+  const carts = (await getAll()) as Cart[];
+
   const index = carts.findIndex((c) => c.userId === cart.userId);
 
   if (index === -1) {
@@ -18,7 +21,7 @@ const save = (cart) => {
     carts[index] = cart;
   }
 
-  fileDb.write(FILE, carts);
+  await fileDb.write(FILE, carts);
   return cart;
 };
 

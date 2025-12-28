@@ -1,11 +1,12 @@
-import { fileDb } from "../utils/fileDb";
+import { fileDb } from "../shared/utils/fileDb";
 const FILE = "brands.json";
 
-const getAll = () => fileDb.read(FILE) || [];
-const create = (brand: { id: string; name: string }) => {
-  const brands = exports.getAll();
+const getAll = async () => (await fileDb.read(FILE)) || [];
+
+const create = async (brand: { id: string; name: string }) => {
+  const brands = await getAll();
   brands.push(brand);
-  fileDb.write(FILE, brands);
+  await fileDb.write(FILE, brands);
 
   return brand;
 };
