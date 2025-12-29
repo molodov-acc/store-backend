@@ -78,7 +78,11 @@ function initSocket(server) {
 
       if (chat.status === CHAT_STATUSES.CLOSED) return;
 
-      if (chat.operatorId) return;
+      // Проверяем, что чат еще не занят другим оператором
+      if (chat.operatorId && chat.operatorId !== userId) return;
+
+      // Проверяем, что оператор еще не подключен к этому чату
+      if (socket.activeChats.has(chatId)) return;
 
       chat.status = CHAT_STATUSES.ACTIVE;
       chat.operatorId = userId;
