@@ -5,17 +5,10 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "S"
-    ],
-    "colors": [
-      "red",
-      "blue"
-    ],
+    "sizes": ["M", "L", "S"],
+    "colors": ["red", "blue"],
     "price": 32000,
-    "image": "/images/products/product-1766655765727-884644195.png",
+    "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
   },
   {
@@ -24,15 +17,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "green"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["black", "red", "green"],
     "price": 22000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -43,17 +29,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "red", "blue"],
     "price": 25000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -64,17 +41,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "red", "blue"],
     "price": 25000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -85,17 +53,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "white",
-      "black",
-      "green"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["white", "black", "green"],
     "price": 3500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -106,17 +65,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "red", "blue"],
     "price": 7000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -127,17 +77,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "yellow",
-      "pink",
-      "purple"
-    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["yellow", "pink", "purple"],
     "price": 18000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -148,17 +89,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "red", "blue"],
     "price": 15000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -169,16 +101,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "gray"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "gray"],
     "price": 28000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -189,16 +113,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "orange"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "orange"],
     "price": 24000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -209,15 +125,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "pink",
-      "purple",
-      "white"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["pink", "purple", "white"],
     "price": 19000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -228,16 +137,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "purple",
-      "blue",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["purple", "blue", "black"],
     "price": 26000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -248,16 +149,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "red",
-      "black",
-      "yellow"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["red", "black", "yellow"],
     "price": 30000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -268,17 +161,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "gray"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "white", "gray"],
     "price": 4500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -289,17 +173,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "pink",
-      "white",
-      "purple"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["pink", "white", "purple"],
     "price": 4200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -310,17 +185,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "brown",
-      "black",
-      "gray"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["brown", "black", "gray"],
     "price": 5500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -331,17 +197,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "brown",
-      "green"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "brown", "green"],
     "price": 6800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -352,17 +209,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "brown",
-      "black",
-      "gray"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["brown", "black", "gray"],
     "price": 6200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -373,17 +221,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "blue",
-      "red",
-      "white"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["blue", "red", "white"],
     "price": 4800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -394,16 +233,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43"],
+    "colors": ["black", "white", "blue"],
     "price": 7500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -414,17 +245,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "37",
-      "38",
-      "39",
-      "40"
-    ],
-    "colors": [
-      "black",
-      "brown",
-      "gray"
-    ],
+    "sizes": ["37", "38", "39", "40"],
+    "colors": ["black", "brown", "gray"],
     "price": 5800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -435,17 +257,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "white",
-      "black",
-      "gray"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["white", "black", "gray"],
     "price": 3800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -456,15 +269,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "orange"
-    ],
+    "sizes": ["L", "XL"],
+    "colors": ["black", "red", "orange"],
     "price": 32000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -475,16 +281,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "blue",
-      "white",
-      "silver"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["blue", "white", "silver"],
     "price": 27000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -495,16 +293,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "green",
-      "black",
-      "yellow"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["green", "black", "yellow"],
     "price": 21000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -515,15 +305,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "pink",
-      "white",
-      "purple"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["pink", "white", "purple"],
     "price": 23000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -534,16 +317,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "purple",
-      "blue",
-      "pink"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["purple", "blue", "pink"],
     "price": 25000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -554,16 +329,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "red",
-      "white"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "red", "white"],
     "price": 12000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -574,15 +341,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "red",
-      "blue",
-      "yellow"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["red", "blue", "yellow"],
     "price": 9000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -593,15 +353,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "white"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "red", "white"],
     "price": 35000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -612,16 +365,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "silver"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "silver"],
     "price": 33000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -632,16 +377,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "black"],
     "price": 24000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -652,16 +389,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "pink",
-      "purple",
-      "white"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["pink", "purple", "white"],
     "price": 27000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -672,17 +401,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "gray",
-      "white"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "gray", "white"],
     "price": 8500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -693,17 +413,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "female",
-    "sizes": [
-      "37",
-      "38",
-      "39",
-      "40"
-    ],
-    "colors": [
-      "black",
-      "pink",
-      "purple"
-    ],
+    "sizes": ["37", "38", "39", "40"],
+    "colors": ["black", "pink", "purple"],
     "price": 7200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -714,15 +425,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "gold"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "red", "gold"],
     "price": 36000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -733,15 +437,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "blue",
-      "silver"
-    ],
+    "sizes": ["L", "XL"],
+    "colors": ["black", "blue", "silver"],
     "price": 31000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -752,16 +449,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "green",
-      "black",
-      "yellow"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["green", "black", "yellow"],
     "price": 14000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -772,16 +461,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "38",
-      "39",
-      "40"
-    ],
-    "colors": [
-      "blue",
-      "red",
-      "black"
-    ],
+    "sizes": ["38", "39", "40"],
+    "colors": ["blue", "red", "black"],
     "price": 4500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -792,16 +473,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "red"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "red"],
     "price": 20000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -812,16 +485,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "orange"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "red", "orange"],
     "price": 29000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -832,16 +497,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "black"],
     "price": 22000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -852,15 +509,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "pink",
-      "purple",
-      "white"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["pink", "purple", "white"],
     "price": 20000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -871,17 +521,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "red", "blue"],
     "price": 7200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -892,17 +533,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "brown",
-      "black",
-      "gray"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["brown", "black", "gray"],
     "price": 6500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -913,17 +545,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "black",
-      "purple",
-      "gray"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["black", "purple", "gray"],
     "price": 6000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -934,15 +557,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "yellow",
-      "green"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "yellow", "green"],
     "price": 26000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -953,15 +569,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "blue",
-      "silver"
-    ],
+    "sizes": ["L", "XL"],
+    "colors": ["black", "blue", "silver"],
     "price": 28000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -972,16 +581,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "purple",
-      "pink",
-      "white"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["purple", "pink", "white"],
     "price": 23000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -992,16 +593,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43"],
+    "colors": ["black", "white", "blue"],
     "price": 5000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1012,16 +605,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "red"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "red"],
     "price": 27000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1032,16 +617,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "black"],
     "price": 23000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1052,16 +629,8 @@
     "categoryId": 1,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "pink",
-      "white",
-      "purple"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["pink", "white", "purple"],
     "price": 24000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1072,17 +641,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "gray"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["black", "white", "gray"],
     "price": 5200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1093,17 +653,8 @@
     "categoryId": 2,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "white",
-      "black",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["white", "black", "blue"],
     "price": 5500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1114,17 +665,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "white",
-      "pink",
-      "purple"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["white", "pink", "purple"],
     "price": 5000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1135,17 +677,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "black",
-      "gray",
-      "red"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["black", "gray", "red"],
     "price": 4800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1156,15 +689,8 @@
     "categoryId": 1,
     "brandId": 1,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "yellow"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "red", "yellow"],
     "price": 26000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1175,16 +701,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "white",
-      "black",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43"],
+    "colors": ["white", "black", "blue"],
     "price": 4600,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1195,17 +713,8 @@
     "categoryId": 2,
     "brandId": 2,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "white",
-      "blue",
-      "red"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["white", "blue", "red"],
     "price": 4000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1216,16 +725,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "orange"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "orange"],
     "price": 24000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1236,16 +737,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "red",
-      "black",
-      "yellow"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["red", "black", "yellow"],
     "price": 30000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1256,17 +749,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "brown",
-      "green"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "brown", "green"],
     "price": 6800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1277,17 +761,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "brown",
-      "black",
-      "gray"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["brown", "black", "gray"],
     "price": 6200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1298,17 +773,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "37",
-      "38",
-      "39",
-      "40"
-    ],
-    "colors": [
-      "black",
-      "brown",
-      "gray"
-    ],
+    "sizes": ["37", "38", "39", "40"],
+    "colors": ["black", "brown", "gray"],
     "price": 5800,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1319,16 +785,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "blue",
-      "white",
-      "silver"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["blue", "white", "silver"],
     "price": 27000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1339,16 +797,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "purple",
-      "blue",
-      "pink"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["purple", "blue", "pink"],
     "price": 25000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1359,15 +809,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "white"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "red", "white"],
     "price": 35000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1378,16 +821,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "orange"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "red", "orange"],
     "price": 29000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1398,16 +833,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "black"],
     "price": 22000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1418,15 +845,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "colors": [
-      "pink",
-      "purple",
-      "white"
-    ],
+    "sizes": ["S", "M"],
+    "colors": ["pink", "purple", "white"],
     "price": 20000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1437,17 +857,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43",
-      "44"
-    ],
-    "colors": [
-      "black",
-      "red",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["black", "red", "blue"],
     "price": 7200,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1458,17 +869,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "40",
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "brown",
-      "black",
-      "gray"
-    ],
+    "sizes": ["40", "41", "42", "43"],
+    "colors": ["brown", "black", "gray"],
     "price": 6500,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1479,17 +881,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-    ],
-    "colors": [
-      "black",
-      "purple",
-      "gray"
-    ],
+    "sizes": ["36", "37", "38", "39"],
+    "colors": ["black", "purple", "gray"],
     "price": 6000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1500,15 +893,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L"
-    ],
-    "colors": [
-      "black",
-      "yellow",
-      "green"
-    ],
+    "sizes": ["M", "L"],
+    "colors": ["black", "yellow", "green"],
     "price": 26000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1519,15 +905,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "blue",
-      "silver"
-    ],
+    "sizes": ["L", "XL"],
+    "colors": ["black", "blue", "silver"],
     "price": 28000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1538,16 +917,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "female",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "purple",
-      "pink",
-      "white"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["purple", "pink", "white"],
     "price": 23000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1558,16 +929,8 @@
     "categoryId": 2,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "41",
-      "42",
-      "43"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "blue"
-    ],
+    "sizes": ["41", "42", "43"],
+    "colors": ["black", "white", "blue"],
     "price": 5000,
     "image": "/images/products/product-1766657175996-573424384.png",
     "category": "Snowboards"
@@ -1578,16 +941,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      "black",
-      "white",
-      "red"
-    ],
+    "sizes": ["M", "L", "XL"],
+    "colors": ["black", "white", "red"],
     "price": 27000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
@@ -1598,16 +953,8 @@
     "categoryId": 1,
     "brandId": 3,
     "gender": "male",
-    "sizes": [
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "blue",
-      "green",
-      "black"
-    ],
+    "sizes": ["S", "M", "L"],
+    "colors": ["blue", "green", "black"],
     "price": 23000,
     "image": "/images/products/product-1766656625398-396074682.png",
     "category": "Clothes"
