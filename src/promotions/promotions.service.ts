@@ -1,12 +1,7 @@
-import { storage } from "./promotions.storage";
-import { CreatePromotion } from "./types";
+import { getAllPromotions } from "./promotions.repository";
 
-const getAll = () => storage.getAll();
-
-// TODO добавить проверку входных данных на бизнес логику
-const create = async (data: CreatePromotion) => await storage.create(data);
+const getAll = () => getAllPromotions();
 
 export const service = {
   getAll,
-  create,
 };

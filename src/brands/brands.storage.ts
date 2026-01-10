@@ -1,9 +1,5 @@
-import { fileDb } from "../shared/utils/fileDb";
-const FILE = "brand.json";
-
 const getAll = async () => {
-  const data = await fileDb.read(FILE);
-  return data ?? [];
+  return [];
 };
 
 export const storage = {

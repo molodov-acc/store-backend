@@ -1,12 +1,8 @@
 import { Product } from "../shared/types/types";
-import { fileDb } from "../shared/utils/fileDb";
 
-const getAll = async () => await fileDb.read("products.json");
+const getAll = async () => [];
 
-const getById = async (productId: string) => {
-  const products = (await fileDb.read("products.json")) as Product[];
-  return products.find(({ id }) => id === productId);
-};
+const getById = async (productId: string) => ({});
 
 export const storage = {
   getAll,
