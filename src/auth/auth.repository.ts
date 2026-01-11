@@ -2,7 +2,7 @@ import { AppError } from "../errors/AppError";
 import { prisma } from "../prisma";
 
 export class UserRepository {
-  async create(data: { email: string; password: string }) {
+  static async create(data: { email: string; password: string }) {
     try {
       const user = await prisma.user.create({ data });
 
@@ -12,7 +12,7 @@ export class UserRepository {
     }
   }
 
-  async findByEmail(email: string) {
+  static async findByEmail(email: string) {
     return prisma.user.findUnique({ where: { email } });
   }
 }

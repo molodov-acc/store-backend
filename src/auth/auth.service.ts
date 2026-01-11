@@ -5,14 +5,12 @@ import { AppError } from "../errors/AppError";
 import { UserRepository } from "./auth.repository";
 import { AuthCredentials, User } from "./types";
 
-const storage = new UserRepository();
-
 const register = async ({ email, password }: AuthCredentials) => {
   if (!email?.trim() || !password?.trim()) {
     throw new AppError("Email and password required", 400);
   }
 
-  const existingUser = await storage.findByEmail(email);
+  const existingUser = await UserRepository.findByEmail(email);
   if (existingUser) {
     throw new AppError("User already exists", 400);
   }
@@ -20,12 +18,11 @@ const register = async ({ email, password }: AuthCredentials) => {
   const hashedPassword = await bcrypt.hash(password, 10);
 
   const user = {
-    id: randomUUID(),
     email,
     password: hashedPassword,
   };
 
-  await storage.create(user);
+  await UserRepository.create(user);
 
   return generateToken(user);
 };
@@ -35,7 +32,7 @@ const login = async ({ email, password }: AuthCredentials) => {
     throw new AppError("Email and password required", 400);
   }
 
-  const user = await storage.findByEmail(email);
+  const user = await UserRepository.findByEmail(email);
   if (!user) {
     throw new AppError("Invalid credentials", 401);
   }
@@ -55,7 +52,7 @@ function generateToken(user: User) {
     throw new Error("JWT_SECRET is not defined");
   }
 
-  return jwt.sign({ id: user.id, email: user.email }, secret, {
+  return jwt.sign({ email: user.email }, secret, {
     expiresIn: process.env.JWT_EXPIRES_IN as jwt.SignOptions["expiresIn"],
   });
 }
