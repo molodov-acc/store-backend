@@ -2,8 +2,10 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { randomUUID } from "crypto";
 import { AppError } from "../errors/AppError";
-import { storage } from "./auth.storage";
+import { UserRepository } from "./auth.repository";
 import { AuthCredentials, User } from "./types";
+
+const storage = new UserRepository();
 
 const register = async ({ email, password }: AuthCredentials) => {
   if (!email?.trim() || !password?.trim()) {

@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: store_postgres
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: app_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: store_api
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: "postgresql://app:secret@postgres:5432/app_db"
+      PORT: 3000
+      JWT_SECRET: supersecret
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: sh -c "npx prisma migrate deploy && node dist/server.js"
+
+volumes:
+  postgres_data:
