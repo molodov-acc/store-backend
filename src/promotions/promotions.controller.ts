@@ -10,9 +10,8 @@ const getAll = async (_: Request, res: Response) => {
 
 const create = async (req: Request, res: Response) => {
   try {
-    const promotion = await service.create(req.body);
-
-    res.status(201).json(promotion);
+    // const promotion = await service.create(req.body);
+    //res.status(201).json(promotion);
   } catch (err) {
     if (err instanceof z.ZodError) {
       res.json(err.message);

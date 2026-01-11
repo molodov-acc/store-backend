@@ -2,11 +2,12 @@ import { Server } from "socket.io";
 import { auth } from "./middlewares/auth";
 import { ROLES, SOCKET_EVENTS, CHAT_STATUSES, ROOMS } from "./constants";
 
+// TODO типизировать все параметры
 const chats = new Map();
 /**
  * Отправка сообщения в комнату
  */
-function sendMessageToRoom(io, chatId, sender, text) {
+function sendMessageToRoom(io: any, chatId: string, sender: any, text: string) {
   io.to(chatId).emit(SOCKET_EVENTS.CHAT.MESSAGE.NEW, {
     chatId,
     sender,
@@ -18,7 +19,7 @@ function sendMessageToRoom(io, chatId, sender, text) {
 /**
  * Инициализация Socket.IO
  */
-export function initSocket(server) {
+export function initSocket(server: any) {
   const io = new Server(server, {
     cors: { origin: "*" },
   });
@@ -56,75 +57,87 @@ export function initSocket(server) {
     }
 
     // ================== Сообщения ==================
-    socket.on(SOCKET_EVENTS.CHAT.MESSAGE.SEND, ({ chatId, text }) => {
-      if (!chatId || !text) return;
+    socket.on(
+      SOCKET_EVENTS.CHAT.MESSAGE.SEND,
+      ({ chatId, text }: { chatId: string; text: string }) => {
+        if (!chatId || !text) return;
 
-      if (!socket.rooms.has(chatId)) {
-        return;
+        if (!socket.rooms.has(chatId)) {
+          return;
+        }
+
+        const chat = chats.get(chatId);
+        if (!chat) return;
+
+        if (chat.status === CHAT_STATUSES.CLOSED) return;
+
+        sendMessageToRoom(io, chatId, role, text);
       }
-
-      const chat = chats.get(chatId);
-      if (!chat) return;
-
-      if (chat.status === CHAT_STATUSES.CLOSED) return;
-
-      sendMessageToRoom(io, chatId, role, text);
-    });
+    );
 
     // ================== Подключение оператора к чату ==================
-    socket.on(SOCKET_EVENTS.OPERATOR.JOIN_CHAT, ({ chatId }) => {
-      const chat = chats.get(chatId);
-      if (!chat) return;
+    socket.on(
+      SOCKET_EVENTS.OPERATOR.JOIN_CHAT,
+      ({ chatId }: { chatId: string }) => {
+        const chat = chats.get(chatId);
+        if (!chat) return;
 
-      if (chat.status === CHAT_STATUSES.CLOSED) return;
+        if (chat.status === CHAT_STATUSES.CLOSED) return;
 
-      // Проверяем, что чат еще не занят другим оператором
-      if (chat.operatorId && chat.operatorId !== userId) return;
+        // Проверяем, что чат еще не занят другим оператором
+        if (chat.operatorId && chat.operatorId !== userId) return;
 
-      // Проверяем, что оператор еще не подключен к этому чату
-      if (socket.activeChats.has(chatId)) return;
+        // Проверяем, что оператор еще не подключен к этому чату
+        if (socket.activeChats.has(chatId)) return;
 
-      chat.status = CHAT_STATUSES.ACTIVE;
-      chat.operatorId = userId;
+        chat.status = CHAT_STATUSES.ACTIVE;
+        chat.operatorId = userId;
 
-      socket.join(chatId);
-      socket.activeChats.add(chatId);
+        socket.join(chatId);
+        socket.activeChats.add(chatId);
 
-      io.to(ROOMS.OPERATORS).emit(SOCKET_EVENTS.CHAT.JOINED, {
-        chatId,
-        operatorId: userId,
-        status: CHAT_STATUSES.ACTIVE,
-      });
+        io.to(ROOMS.OPERATORS).emit(SOCKET_EVENTS.CHAT.JOINED, {
+          chatId,
+          operatorId: userId,
+          status: CHAT_STATUSES.ACTIVE,
+        });
 
-      sendMessageToRoom(io, chatId, "server", "Оператор подключился к чату");
-    });
+        sendMessageToRoom(io, chatId, "server", "Оператор подключился к чату");
+      }
+    );
 
     // ================== TYPING ==================
-    socket.on(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_START, ({ chatId }) => {
-      if (!socket.rooms.has(chatId)) return;
+    socket.on(
+      SOCKET_EVENTS.CHAT.MESSAGE.TYPING_START,
+      ({ chatId }: { chatId: string }) => {
+        if (!socket.rooms.has(chatId)) return;
 
-      const chat = chats.get(chatId);
-      if (!chat || chat.status !== CHAT_STATUSES.ACTIVE) return;
+        const chat = chats.get(chatId);
+        if (!chat || chat.status !== CHAT_STATUSES.ACTIVE) return;
 
-      socket.to(chatId).emit(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_START, {
-        role,
-        userId,
-      });
-    });
+        socket.to(chatId).emit(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_START, {
+          role,
+          userId,
+        });
+      }
+    );
 
-    socket.on(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_STOP, ({ chatId }) => {
-      if (!socket.rooms.has(chatId)) return;
+    socket.on(
+      SOCKET_EVENTS.CHAT.MESSAGE.TYPING_STOP,
+      ({ chatId }: { chatId: string }) => {
+        if (!socket.rooms.has(chatId)) return;
 
-      const chat = chats.get(chatId);
-      if (!chat || chat.status !== CHAT_STATUSES.ACTIVE) return;
+        const chat = chats.get(chatId);
+        if (!chat || chat.status !== CHAT_STATUSES.ACTIVE) return;
 
-      socket.to(chatId).emit(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_STOP, {
-        role,
-        userId,
-      });
-    });
+        socket.to(chatId).emit(SOCKET_EVENTS.CHAT.MESSAGE.TYPING_STOP, {
+          role,
+          userId,
+        });
+      }
+    );
     // ================== Закрытие ==================
-    socket.on(SOCKET_EVENTS.CHAT.CLOSED, ({ chatId }) => {
+    socket.on(SOCKET_EVENTS.CHAT.CLOSED, ({ chatId }: { chatId: string }) => {
       const chat = chats.get(chatId);
       if (!chat) return;
 
@@ -143,7 +156,7 @@ export function initSocket(server) {
     // ================== Отключение ==================
     socket.on(SOCKET_EVENTS.DISCONNECT, () => {
       if (role === ROLES.OPERATOR) {
-        socket.activeChats.forEach((chatId) => {
+        socket.activeChats.forEach((chatId: string) => {
           const chat = chats.get(chatId);
           if (!chat) return;
 

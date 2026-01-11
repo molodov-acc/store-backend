@@ -6,12 +6,6 @@ const getAll = async (req: Request, res: Response) => {
   res.json(categories);
 };
 
-const create = async (req: Request, res: Response) => {
-  const category = await service.create(req.body.name);
-  res.json(category);
-};
-
 export const controller = {
   getAll,
-  create,
 };
