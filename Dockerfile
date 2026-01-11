@@ -15,6 +15,8 @@ COPY . .
 
 # Генерируем Prisma Client
 RUN npx prisma generate
+# Сборка проекта
+RUN npm run build
 
 # По умолчанию запускаем команду из docker-compose.yml
 CMD ["sh", "-c", "npx prisma migrate deploy && node dist/server.js"]

@@ -1,4 +1,4 @@
-export function auth(socket, next) {
+export function auth(socket: any, next: any) {
   const { userId, role } = socket.handshake.auth;
 
   if (!userId) next(new Error("Требуется userId"));
