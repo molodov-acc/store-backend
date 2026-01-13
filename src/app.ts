@@ -5,6 +5,7 @@ import { router as authRoutes } from "./auth/auth.routes";
 import { router as cartRoutes } from "./cart/cart.routes";
 import { router as categoriesRoutes } from "./categories/categories.routes";
 import { router as brandsRoutes } from "./brands/brands.routes";
+import { promotionsRouter } from "./promotions/promotions.routes";
 import { errorMiddleware } from "./middlewares/error";
 
 export function createApp() {
@@ -33,6 +34,7 @@ export function createApp() {
   app.use("/cart", cartRoutes);
   app.use("/categories", categoriesRoutes);
   app.use("/brands", brandsRoutes);
+  app.use("/promotions", promotionsRouter);
 
   app.get("/health", (req, res) => {
     res.json({ status: "ok" });
