@@ -8,7 +8,6 @@ const getAll = async (
   res: Response
 ) => {
   const products = await service.getAll(req.query);
-
   res.json(products);
 };
 
